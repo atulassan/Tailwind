@@ -1,14 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailwind Responsive Template</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
 </head>
+
 <body>
-    <div class="container mx-auto px-4"> 
-        {/* Your content here */}
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="bg-gray-100 p-4 rounded-lg">
+                <h2>Container and Spacing</h2>
+                <h3><button type="button"
+                        class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 
+                        dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">container</button>
+                    Centers the content horizontally within a
+                    maximum width.</h3>
+                <h3><button type="button"
+                        class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 
+                    dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">mx-auto:</button> Adds
+                    margin left and right automatically,
+                    centering the element.</h3>
+                <h3><button type="button"
+                        class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 
+                    dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">px-4:</button> Adds
+                    padding of 1rem (16px) to the left and
+                    right.</h3>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg">
+                <h2>Grid System</h2>
+                <h3><button type="button"
+                        class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 
+                        dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">grid</button>Enables
+                    grid layout.</h3>
+                <h3><button type="button"
+                        class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 
+                    dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">grid-cols-1</button>
+                    Creates a single column grid (default).</h3>
+                <h3><button type="button"
+                        class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 
+                    dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">md:grid-cols-2</button>
+                    Creates two columns on medium screens and above (using Tailwind's responsive modifiers).</h3>
+                <h3><button type="button"
+                        class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 
+                        dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">lg:grid-cols-3</button>Creates
+                    three columns on large screens and above.</h3>
+                <h3><button type="button"
+                        class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 
+                            dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">gap-4</button>Adds
+                    padding of 1rem (16px) to the left and
+                    right.
+                </h3>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg">
+                <img src="https://andrewfordengineerblog.wordpress.com/wp-content/uploads/2012/11/myimg.png" alt="Image"
+                    class="object-cover w-full h-48 rounded-lg">
+                <h2>Responsive Images</h2>
+                <h3><button type="button"
+                        class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 
+                        dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">object-cover</button>
+                    Scales the image to cover the entire container, cropping any parts that don't fit.</h3>
+                <h3><button type="button"
+                        class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 
+                        dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">w-full</button>
+                    Sets the width of the image to 100%.</h3>
+                <h3><button type="button"
+                        class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 
+                            dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Sets the height of
+                        the image to 48px.</button>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg">
+                <h2>Text Styles</h2>
+                text-center: Centers the text horizontally.
+                text-lg: Sets the font size to 1.125rem (18px).
+                font-bold: Applies bold font weight.
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg">
+                <h2 class="text-center text-lg font-bold">Buttons</h2>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded inline-block">
+                    Click Me
+                </button>
+                <h3><button class="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded inline-block">bg-blue-500:</button> Sets the background color to a shade of blue.</h3>
+                <h3><button class="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded inline-block">hover:bg-blue-700:</button> Changes the background color on hover.</h3>
+                <h3><button class="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded inline-block">text-white:</button> Sets the text color to white.</h3>
+                <h3><button class="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded inline-block">px-4:</button> Adds padding to the left and right.</h3>
+                <h3><button class="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded inline-block">py-2:</button> Adds padding to the top and bottom.</h3>
+                <h3><button class="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded inline-block">rounded:</button> Adds rounded corners.</h3>
+                <h3><button class="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded inline-block">inline-block:</button> Makes the button an inline-block element.</h3>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg">
+                <h2 class="text-center text-lg font-bold">FLex</h2>
+                <div class="flex flex-col items-center justify-center">
+                    <h3><button class="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded inline-block">justify-center:</button> Enables flexbox layout</h3>
+                    <h3><button class="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded inline-block">flex-col:</button> Creates a column layout.</h3>
+                    <h3><button class="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded inline-block">items-center:</button> Centers items horizontally.</h3>
+                    <h3><button class="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded inline-block">justify-center:</button> Centers items vertically.</h3>
+                </div>
+
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg">
+                <h2 class="text-center text-lg font-bold">Utility Classes</h2>
+                <div class="hidden md:block">
+                    {/* Content visible on medium screens and above */}
+                </div>
+                hidden: Hides the element.
+                md:block: Shows the element on medium screens and above.
+            </div>
+        </div>
     </div>
 </body>
+
 </html>
